@@ -46,6 +46,7 @@ def main():
     # 处理输入文本中的每一个字符
     for char in args.text:
         # 打印该字符在字典中的对应值，或打印该字符本身。改变print()中的"end"值，以避免添加一个新行
+        # 用户输入是字典的key，需要打印出对应的value，字典内若无，则定义输出用户原输入
         print(jumper.get(char, char), end='')
     print()
 
